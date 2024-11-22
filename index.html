@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open 1000 Windows</title>
+  <script>
+    function openWindows() {
+      const url = "https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif"; // https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif
+      for (let i = 0; i < 1000; i++) {
+        window.open(
+          url,
+          "_blank",
+          "width=600,height=400,left=" + (i * 5) + ",top=" + (i * 5)
+        );
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Click the button to open 1000 windows</h1>
+  <button onclick="openWindows()">Open 1000 Windows</button>
+</body>
+</html>
